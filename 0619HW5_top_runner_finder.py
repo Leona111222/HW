@@ -9,12 +9,13 @@ print(f"ranking list={wholeTextLines}")
 
 
 number=int(input("pls input one num:"))
-for i in range(len(wholeTextLines)):
-    try:
+while True:
+    try: 
         name=wholeTextLines[number-1][0]
         #print(name)
-    except:
+    except: #mistake
         number=int(input("pls input another num:"))
-    continue
+    else: #no mistake
+        break
 print(name)
 
